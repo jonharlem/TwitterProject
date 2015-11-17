@@ -1,0 +1,23 @@
+{
+  "name": "vctweets",
+  "version": "0.0.1",
+  "description": "Working to analyze/visualize venture capital tweets.",
+  "main": "js/app.js",
+  "dependencies": {
+    "twitter": "^1.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonharlem/TwitterProject.git"
+  },
+  "author": "Jon Harlem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonharlem/TwitterProject/issues"
+  },
+  "homepage": "https://github.com/jonharlem/TwitterProject#readme"
+}
