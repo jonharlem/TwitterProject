@@ -1,0 +1,38 @@
+
+/*NAV BAR*/
+.navbar-default {
+	background-color: #4EB2B2;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+	color: #fff;
+	font-size: 2em;
+	font-weight: 400;
+	letter-spacing: 4px;
+}
+
+.navbar-default .navbar-brand {
+	padding-left: 3%;
+}
+
+.nav>li>a {
+	padding-right: 35px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	color: #7FD1D1;
+}
+/*/NAV BAR*/
+
+
+/*PAGE HEADER*/
+.page-header {
+	margin-top: 75px;
+	text-align: center;
+}
+
+.page-header h1 {
+	color: #4EB2B2;
+	font-size: 5em;
+
+}
