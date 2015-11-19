@@ -7,7 +7,7 @@
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
 	color: #fff;
 	font-size: 2em;
-	font-weight: 400;
+	font-weight: 100;
 	letter-spacing: 4px;
 }
 
@@ -22,7 +22,7 @@
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
 	color: #7FD1D1;
 }
-/*/NAV BAR*/
+/*   /NAV BAR*   /
 
 
 /*PAGE HEADER*/
@@ -33,6 +33,32 @@
 
 .page-header h1 {
 	color: #4EB2B2;
-	font-size: 5em;
+	font-size: 6em;
+	font-weight: 100;
+}
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	color: #666;
+	font-weight: 200;
+}
+/*   /PAGE HEADER   */
+
+/*JUMBOTRON*/
+.jumbotron {
+	border: solid 2px #4EB2B2;
+	background-color: #fff;
+	height: 600px;
+}
+/*   /JUMBOTRON   */
+
+/*FOOTER*/
+.navbar-text {
+	float: right;
+}
+
+.navbar-default .navbar-text, .navbar-default .navbar-link {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 100;
+	letter-spacing: 3px;
 }
