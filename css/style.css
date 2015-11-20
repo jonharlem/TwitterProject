@@ -45,11 +45,21 @@
 
 /*JUMBOTRON*/
 .jumbotron {
-	border: solid 2px #4EB2B2;
 	background-color: #fff;
-	height: 600px;
+	border: solid 2px #4EB2B2;
+	height: 500px;
+	margin-bottom: 75px;
+	padding: 10px;
 }
 /*   /JUMBOTRON   */
+
+/*TABLE*/
+table {
+	border: solid 2px #4EB2B2;
+	display: inline-block;
+	float: right;
+}
+/*   TABLE   */
 
 /*FOOTER*/
 .navbar-text {
