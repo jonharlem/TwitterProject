@@ -25,24 +25,37 @@ function getTweetsAfter(maxIdValue){
   }
 
   T.get('statuses/user_timeline', params, function(err, data, response) {
-    // console.log(data)
-    var cleanedData = data.map(function(tweetObj) {
-      return {
-        text: tweetObj.text,
-        id: tweetObj.id
+    
+    try {
+      // console.log(data)
+      if (allCleanedData.length <= 3200) {
+        var cleanedData = data.map(function(tweetObj) {
+          return {
+            text: tweetObj.text,
+            id: tweetObj.id
+          }
+        });
+
+        //ADD TO ALLCLEANEDDATA
+        allCleanedData = allCleanedData.concat(cleanedData);
+        //GET THE RIGHT MAX ID VALUE
+        maxIdValue = allCleanedData[allCleanedData.length-1].id
+        getTweetsAfter(maxIdValue);
       }
-    });
-    //ADD TO ALLCLEANEDDATA
+      else {
+        console.log(allCleanedData);
+      }
+  }
+  catch (error) {
+    console.log(allCleanedData);
+  }
 
-    //GET THE RIGHT MAX ID VALUE
-
-    getTweetsAfter(/*correctMax*/)
-
-    console.log(cleanedData);
+    
 
   });
-
+  return
 }
 
+getTweetsAfter();
 
 
