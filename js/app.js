@@ -9,8 +9,8 @@ var T = new Twit({
 var params = {
   count: 200,
   exclude_replies: true,
-  user_id: 183749519,
-  screen_name: 'paulg'
+  user_id: 586,
+  screen_name: 'sacca'
 }
 
 var allCleanedData = [];
@@ -20,8 +20,8 @@ function getTweetsAfter(maxIdValue) {
     count: 200,
     max_id: maxIdValue,
     exclude_replies: true,
-    user_id: 183749519,
-    screen_name: 'paulg'
+    user_id: 586,
+    screen_name: 'sacca'
   }
 
   T.get('statuses/user_timeline', params, function(err, data, response) {
@@ -47,7 +47,7 @@ function getTweetsAfter(maxIdValue) {
     } catch (error) {
       console.log(allCleanedData);
     }
-
+    
   });
   return
 }

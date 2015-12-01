@@ -1,17 +1,17 @@
-var vcHandle = '@sama'
+var vcHandle = ''
 
 var rawTweets = []
 
-var vcList = [{
-  "handle": "@sama",
-  "name": "Sam Altman"
-}, {
-  "handle": "@paulg",
-  "name": "Paul Graham"
-}, {
-  "handle": "@kevinrose",
-  "name": "Kevin Rose"
-}]
+// var vcList = [{
+//   "handle": "@sama",
+//   "name": "Sam Altman"
+// }, {
+//   "handle": "@paulg",
+//   "name": "Paul Graham"
+// }, {
+//   "handle": "@kevinrose",
+//   "name": "Kevin Rose"
+// }]
 
 //create a list of unique handles
 function uniq(arr) {
@@ -19,7 +19,21 @@ function uniq(arr) {
   return arr.filter(function(item) {
     return seen.hasOwnProperty(item) ? false : (seen[item] = true);
   });
-}
+};
+
+// function findHandles(arr) {
+//   var tweetHandles = [];
+//   for (var i = 0; i < arr.length; i++) {
+//     //push twitter handles to array
+//     if (arr[i].text.match(/RT +@\w+/g)) {
+//       tweetHandles = tweetHandles.concat(arr[i].text.match(/RT +@\w+/g))
+//     } else if (arr[i].text.match(/@\w+/g)) {
+//       tweetHandles = tweetHandles.concat(arr[i].text.match(/@\w+/g))
+//     }
+
+//   };
+
+//   return tweetHandles;
 
 //stores RT and tweets
 function findHandles(arr) {
@@ -36,19 +50,6 @@ function findHandles(arr) {
 }
 
 //list of unique mentions
-uniqueMentionsList = findHandles(rawTweets)
+// var uniqueMentionsList = findHandles(rawTweets)
 
-
-//properly format json file
-for (var i = 0; i < uniqueMentionsList.length; i++) {
-  var flaredata = []
-    //only add if mention is NOT the vc him/herself
-  if (uniqueMentionsList[i] !== vcHandle) {
-    var obj = {
-      "name": vcHandle,
-      "imports": []
-    };
-
-
-  }
-};
+console.log(findHandles(rawTweets))
