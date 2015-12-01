@@ -1,6 +1,11 @@
-var vcHandle = '';
+function uniq(arr) {
+  var seen = {};
+  return arr.filter(function(item) {
+    return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+  });
+};
 
-vcList = [ '@sama',
+var vcMasterList = [ '@sama',
   '@kevinrose',
   '@pmarca',
   '@paulg',
@@ -101,42 +106,4 @@ vcList = [ '@sama',
   '@mjones',
   '@photomatt' ]
 
-var uniqueMentionsList = [];
-
-var cleanFlaredata = [{
-  "name": 'twitter/vc/' + vcHandle,
-  "imports": []
-}];
-
-function formatData(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    // var found = false;
-    var found = vcList.indexOf(arr[i]) > -1
-    if (found === false && arr[i] !== vcHandle) {
-      cleanFlaredata[0].imports.push('twitter/influencer/' + arr[i])
-    } else if (found === true && arr[i] !== vcHandle) {
-      cleanFlaredata[0].imports.push('twitter/vc/' + arr[i])
-    }
-  }
-  return cleanFlaredata;
-}
-
-// VC IMPORTS
-var cleanFlaredata = formatData(uniqueMentionsList)
-
-// console.log(cleanFlaredata[0].imports[1])
-
-// // CREATE NODES FOR INFLUENCERS
-function influencerNodes(cleanFlaredata) {
-  for (var i = 0; i < cleanFlaredata[0].imports.length; i++) {
-    var influencerObj = {
-      "name": cleanFlaredata[0].imports[i],
-      "imports": []
-    };
-    cleanFlaredata.push(influencerObj)
-  };
-  console.log(cleanFlaredata);
-  return
-}
-
-console.log(influencerNodes(cleanFlaredata))
+vcMasterList = uniq(vcMasterList)
