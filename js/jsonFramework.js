@@ -489,7 +489,39 @@
        imports: []
      }, {
        name: 'twitter/vc/@davemorin',
-       imports: []
+       imports: ['twitter/vc/@sama',
+         'twitter/vc/@pmarca',
+         'twitter/vc/@kentgoldman',
+         'twitter/vc/@tferriss',
+         'twitter/vc/@balajis',
+         'twitter/vc/@paultoo',
+         'twitter/vc/@joshu',
+         'twitter/vc/@johnolilly',
+         'twitter/vc/@paulg',
+         'twitter/vc/@reidhoffman',
+         'twitter/vc/@sacca',
+         'twitter/vc/@KevinColleran',
+         'twitter/vc/@davemcclure',
+         'twitter/vc/@bfeld',
+         'twitter/vc/@msuster',
+         'twitter/vc/@jeremysliew',
+         'twitter/vc/@joshk',
+         'twitter/vc/@ttunguz',
+         'twitter/vc/@stan_chudnovsky',
+         'twitter/vc/@davetisch',
+         'twitter/vc/@photomatt',
+         'twitter/vc/@jason',
+         'twitter/vc/@m2jr',
+         'twitter/vc/@peterfenton',
+         'twitter/vc/@alexisohanian',
+         'twitter/vc/@briansin',
+         'twitter/vc/@johndoerr',
+         'twitter/vc/@fredwilson',
+         'twitter/vc/@bijan',
+         'twitter/vc/@JoshuaBaer',
+         'twitter/vc/@bhorowitz',
+         'twitter/vc/@mkapor'
+       ]
      }, {
        name: 'twitter/vc/@nivi',
        imports: []
@@ -567,7 +599,16 @@
        ]
      }, {
        name: 'twitter/vc/@joshu',
-       imports: []
+       imports: ['twitter/vc/@johnolilly',
+         'twitter/vc/@sacca',
+         'twitter/vc/@joshk',
+         'twitter/vc/@pmarca',
+         'twitter/vc/@mattocko',
+         'twitter/vc/@sama',
+         'twitter/vc/@christine',
+         'twitter/vc/@tferriss',
+         'twitter/vc/@kraneland'
+       ]
      }, {
        name: 'twitter/vc/@alexisohanian',
        imports: []
@@ -588,7 +629,22 @@
        imports: []
      }, {
        name: 'twitter/vc/@mkapor',
-       imports: []
+       imports: ['twitter/vc/@mattocko',
+         'twitter/vc/@pmarca',
+         'twitter/vc/@christine_tsai',
+         'twitter/vc/@chamath',
+         'twitter/vc/@andrewchen',
+         'twitter/vc/@davemcclure',
+         'twitter/vc/@jason',
+         'twitter/vc/@paultoo',
+         'twitter/vc/@sama',
+         'twitter/vc/@sacca',
+         'twitter/vc/@paulg',
+         'twitter/vc/@johnolilly',
+         'twitter/vc/@fredwilson',
+         'twitter/vc/@bfeld',
+         'twitter/vc/@robhayes'
+       ]
      }, {
        name: 'twitter/vc/@tferriss',
        imports: []
